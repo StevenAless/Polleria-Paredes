@@ -5,13 +5,14 @@ import org.springframework.ui.Model;
 
 
 @Controller
-public class ContactoController{
-
-    private static final String INDEX ="contacto/create"; 
-
-    @GetMapping("/contacto/create")
-    public String index(Model model) {
-        return INDEX;
-    }    
+public class HomeController {
     
+    private static final String HOME_INDEX = "Welcome";
+
+    @GetMapping("/")
+    public String index(Model model){
+        return HOME_INDEX;
+    }
+
+
 }
